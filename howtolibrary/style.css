@@ -1,0 +1,374 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, verdana, sans-serif;
+}
+
+
+
+
+/* TOP BODY */
+@media screen and (min-width: 767px){
+
+
+/* HEADER */
+.headertitle{
+  display: block;
+  font-size: 45px;
+  color: #51466A;
+}
+
+.headericon{
+  display: block;
+  background: #E290AD;
+  border-radius: 50%;
+}
+
+.top_link{
+  display: flex;
+  text-decoration: none;
+  width: 610px;
+  position: absolute;
+}
+
+.headermenu{
+  font-size: 15px;
+  color: #51466A;
+  margin-left: 40rem;
+}
+
+.aaaa{
+  display: flex;
+  align-items: center;
+}
+
+header{
+  display: flex;
+  text-decoration: none;
+  border-bottom:  1px solid #51466A;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 60px;
+}
+
+nav{
+  display: block;
+  margin:auto 0 auto auto;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+
+}
+
+ul li{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+.menu a{
+  text-decoration: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  background: #E290AD;
+  width: 180px;
+  height: 50px;
+  border: 2px solid #51466A;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  padding:10px;
+  display: block;
+}
+
+.fix{
+  margin-left: 40rem;
+}
+
+
+
+	.topbgpc{
+		text-align: center;
+		width: 100%;
+		height: auto;
+		margin-bottom: 4%;
+	}
+
+	.topbgsp{
+		display: none;
+	}
+
+	.topcont{
+		/*width: 100%;*/
+		height: auto;
+		font-weight: bold;
+		border: solid 10px #E290AD;
+		padding-bottom: 10%;
+		width: 1100px;
+		/*margin: 0 auto;*/
+		margin: auto;
+	}
+
+
+	.opentitle{
+		display: none;
+	}
+
+	.opentime{
+		display: none;
+	}
+
+	.opentimesub{
+		display: none;
+	}
+
+	.intro{
+		left: 143px;
+		font-size: 48px;
+		line-height: 80px;
+		letter-spacing: 0.3em;
+		color: #FFFFFF;
+		background: #E290AD;
+		text-align: center;
+	}
+
+	.evenf{
+		width: 80px;
+		margin-top: 8%;
+		font-size: 48px;
+		line-height: 60px;
+		color: #FFFFFF;
+		text-align: center;
+		background-color: #51466A;
+		margin-bottom: 5%;
+	}
+
+	.oddf{
+		width: 80px;
+		margin-top: 8%;
+		font-size: 48px;
+		line-height: 60px;
+		color: #51466A;
+		text-align: center;
+		border: solid 3px #51466A;
+		margin-bottom: 5%;
+	}
+
+
+	.florimg{
+		text-align: center;
+	}
+
+	.toppic1{
+		width: 26%;
+	}
+
+	.toppic2{
+		width: 26%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.topspl{
+		display: none;
+	}
+
+	.topspr{
+		display: none;
+	}
+
+
+	hr{
+		border: 1px solid #51466A;
+		margin-top: 60px;
+	}
+
+	.footericon3{
+		display: block;
+		width: 150px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.copyright3{
+		font-size: 14px;
+		line-height: 16px;
+		text-align: right;
+		color: #000000;
+		margin-top: -30px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+/*sp*/
+@media screen and (max-width: 767px){
+
+	.headertitle{
+		display: block;
+		font-size: 20px;
+		color: #51466A;
+		text-align: center;
+	}
+
+	.top_link{
+		text-decoration: none;
+	}
+
+	.headericon{
+		display: none;
+	}
+
+	ul{
+		display: flex;
+		list-style: none;
+	}
+
+	ul li{
+		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.menu a{
+		color: #FFFFFF;
+		text-decoration: none;
+		text-align: center;
+		background: #E290AD;
+		border: 1px solid #51466A;
+		padding:10px;
+		display: block;
+	}
+
+
+
+
+	.topbgsp{
+		width: 100%;
+	}
+
+	.topbgpc{
+		display: none;
+	}
+
+	.topcont{
+		margin: 2em 1em;
+		font-weight: bold;
+		border: solid 3px #E290AD;
+		padding-bottom: 10%;
+
+	}
+
+
+	.opentitle{
+		left: 143px;
+		font-size: 18px;
+		line-height: 40px;
+		letter-spacing: 0.3em;
+		color: #FFFFFF;
+		background: #E290AD;
+		text-align: center;
+	}
+
+	.opentime{
+		text-align: center;
+		margin-top: 5%;
+		color: #51466A;
+		font-size: 16px;
+	}
+
+	.opentimesub{
+		text-align: center;
+		font-size: 14px;
+	}
+
+
+	.intro{
+		margin-top: 8%;
+		left: 143px;
+		font-size: 18px;
+		line-height: 40px;
+		letter-spacing: 0.3em;
+		color: #FFFFFF;
+		background: #E290AD;
+		text-align: center;
+	}
+
+	.evenf{
+		width: 40px;
+		margin-left: 6%;
+		margin-top: 5%;
+		font-size: 16px;
+		line-height: 24px;
+		color: #FFFFFF;
+		text-align: center;
+		background-color: #51466A;
+	}
+
+	.florimg{
+		text-align: center;
+	}
+
+	.topspl{
+		margin-top: 4%;
+		width: 32%;
+		border: 2px solid #51466A;
+	}
+
+	.topspr{
+		margin-top: 4%;
+		margin-left: 4%;
+		width: 32%;
+		border: 2px solid #51466A;
+	}
+
+	.oddf{
+		width: 40px;
+		margin-left: 6%;
+		margin-top: 5%;
+		font-size: 16px;
+		line-height: 24px;
+		color: #51466A;
+		text-align: center;
+		border: solid 3px #51466A;
+	}
+
+
+	.toppic1{
+		display:none;
+	}
+	.toppic2{
+		display:none;
+	}
+
+	hr{
+		border: 1px solid #51466A;
+		margin-top: 60px;
+	}
+
+	.footericon3{
+		display: block;
+		width: 90px;
+		margin-top: 5px;
+	}
+
+	.copyright3{
+		font-size: 11px;
+		text-align: right;
+		color: #000000;
+		margin-top: -30px;
+	}
+
+}

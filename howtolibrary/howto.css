@@ -1,0 +1,947 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, verdana, sans-serif;
+  }
+/* HEADER */
+.headertitle{
+  display: block;
+  font-family: ' A1', sans-serif;
+  font-size: 45px;
+  color: #51466A;
+}
+
+.headericon{
+  display: block;
+  background: #E290AD;
+  border-radius: 50%;
+}
+
+.top_link{
+  display: flex;
+  text-decoration: none;
+  width: 610px;
+  position: absolute;
+}
+
+.headermenu{
+  font-size: 15px;
+  color: #51466A;
+  margin-left: 40rem;
+}
+
+.aaaa{
+  display: flex;
+  align-items: center;
+}
+
+header{
+  display: flex;
+  text-decoration: none;
+  border-bottom:  1px solid #51466A;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 60px;
+}
+
+nav{
+  display: block;
+  margin:auto 0 auto auto;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+
+}
+
+ul li{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+.menu a{
+  text-decoration: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  background: #E290AD;
+  width: 180px;
+  height: 50px;
+  border: 2px solid #51466A;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  padding:10px;
+  display: block;
+}
+
+.fix{
+  margin-left: 40rem;
+}
+
+/* 本の借り方 */
+.content{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.borrowc1{
+width: 1200px;
+margin: 0 auto 0;
+margin-bottom: 105px;
+
+background: #FFFFFF;
+border: 10px solid #E290AD;
+box-sizing: border-box;
+}
+.borrowbg{
+position: absolute;
+width: 1187px;
+height: 105px;
+left: 129px;
+top: 171px;
+
+background: #E290AD;
+}
+.borrow{
+font-family: '', sans-serif;
+font-size: 48px;
+line-height: 60px;
+padding: 29px 0;
+
+letter-spacing: 0.3em;
+
+color: #FFFFFF;
+background: #E290AD;
+}
+.borrowp1{
+margin: 44px auto 0;
+font-family: '', sans-serif;
+font-size: 24px;
+line-height: 30px;
+}
+
+.step1p{
+  font-family: '', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  padding-left: 22px;
+}
+
+.one{
+font-family: ' A1', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+
+color: #FFFFFF;
+
+position: absolute;
+width: 60px;
+height: 60px;
+left: 27px;
+top: 5px;
+
+background: #51466A;
+border: 3px solid #FFFFFF;
+box-sizing: border-box;
+}
+
+.pic1{
+  position: relative;
+  display: flex;
+  margin-top: 48px;
+}
+
+.step1pic{
+font-family: ' A1', sans-serif;
+font-size: 24px;
+line-height: 30px;
+
+border: 5px solid #51466A;
+
+text-align: center;
+
+color: #000000;
+margin-left: 22px;
+}
+
+
+.step2pic{
+  margin-left: 22px;
+
+  border: 5px solid #51466A;
+
+}
+
+.two{
+position: absolute;
+width: 60px;
+height: 60px;
+left: 412px;
+top: 5px;
+
+font-family: ' A1', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+
+color: #FFFFFF;
+
+background: #51466A;
+border: 3px solid #FFFFFF;
+box-sizing: border-box;
+}
+.step2p{
+font-family: ' A1', sans-serif;
+font-size: 24px;
+line-height: 30px;
+
+padding-left: 22px;
+text-align: center;
+
+color: #000000;
+}
+
+.step3pic{
+  margin-left: 22px;
+
+  border: 5px solid #51466A;
+}
+
+
+
+.three{
+position: absolute;
+width: 60px;
+height: 60px;
+left: 796px;
+top: 5px;
+
+font-family: ' A1', sans-serif;
+font-size: 36px;
+line-height: 42px;
+
+color: #FFFFFF;
+
+background: #51466A;
+border: 3px solid #FFFFFF;
+box-sizing: border-box;
+}
+.step3p{
+font-family: ' A1', sans-serif;
+font-size: 24px;
+line-height: 30px;
+
+padding-left: 22px;
+text-align: center;
+
+color: #000000;
+}
+
+.pic2{
+  position: relative;
+  display: flex;
+  margin-top: 60px;
+}
+
+.step4pic{
+  margin-left: 22px;
+
+  border: 5px solid #51466A;
+}
+
+
+
+.four{
+position: absolute;
+width: 60px;
+height: 60px;
+left: 27px;
+top: 5px;
+
+font-family: ' A1', sans-serif;
+font-size: 36px;
+line-height: 42px;
+
+color: #51466A;
+
+background: #FFFFFF;
+border: 3px solid #51466A;
+box-sizing: border-box;
+}
+.step4p{
+  font-family: ' A1', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+
+  padding-left: 22px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.step5pic{
+  margin-left: 22px;
+
+  border: 5px solid #51466A;
+}
+
+.five{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 412px;
+  top: 5px;
+
+  font-family: ' A1', sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #51466A;
+
+  background: #FFFFFF;
+  border: 3px solid #51466A;
+  box-sizing: border-box;
+}
+.step5p{
+  font-family: ' A1', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+
+  padding-left: 22px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.step6pic{
+  margin-left: 22px;
+
+  border: 5px solid #51466A;
+}
+
+.six{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 796px;
+  top: 5px;
+
+  font-family: ' A1', sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #51466A;
+
+  background: #FFFFFF;
+  border: 3px solid #51466A;
+  box-sizing: border-box;
+}
+.step6p{
+  font-family: ' A1', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+
+  padding-left: 22px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.pic3{
+  position: relative;
+  display: flex;
+  margin-top: 60px;
+}
+
+.step7pic{
+  margin-left: 22px;
+
+  border: 5px solid #51466A;
+}
+
+
+.seven{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 27px;
+  top: 5px;
+
+  font-family: ' A1', sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #FFFFFF;
+
+  background: #51466A;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.step7p{
+  font-family: ' A1', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+
+  padding-left: 22px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.fukidashi{
+  width: 215px;
+  height: 151px;
+  margin-left: 137px;
+  margin-top: 38px;
+}
+
+.fukidaship{
+position: absolute;
+width: 120px;
+height: 50px;
+left: 572px;
+top: 85px;
+
+font-family: ' A1', sans-serif;
+font-size: 40px;
+line-height: 50px;
+
+color: #FFFFFF;
+}
+
+.ahiru{
+margin-top: 65px;
+width: 292px;
+height: 241px;
+
+}
+
+
+.borrowc2{
+width: 1180px;
+height: 100px;
+background: #E290AD;
+}
+.return{
+margin-top: 157px;
+
+  font-family: ' A1', sans-serif;
+  font-size: 48px;
+  line-height: 60px;
+  padding: 29px 0;
+
+  letter-spacing: 0.3em;
+
+  color: #FFFFFF;
+  background: #E290AD;
+}
+.returnp{
+margin:62px 0 auto;
+
+font-family: ' A1', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+}
+.returnpic{
+margin:62px 0 auto;
+margin-bottom: 108px;
+
+border: 5px solid #51466A;
+box-sizing: border-box;
+}
+
+
+.footericon3{
+  display: block;
+  width: 150px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.copyright3{
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+margin-top: -10px;
+color: #000000;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*スマホレスポンシブ*/
+@media screen and (max-width:767px) {
+  /* HEADER */
+  body{
+  margin: 0;
+  padding: 0;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, verdana, sans-serif;
+}
+  .headertitle{
+      display: block;
+      font-size: 20px;
+      color: #51466A;
+      text-align: center;
+    }
+
+    .top_link{
+      text-decoration: none;
+    }
+
+    .headericon{
+      display: none;
+    }
+
+    ul{
+      display: flex;
+      list-style: none;
+    }
+
+    ul li{
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .menu a{
+      color: #FFFFFF;
+      text-decoration: none;
+      text-align: center;
+      background: #E290AD;
+      border: 1px solid #51466A;
+      padding:10px;
+      display: block;
+    }
+
+  /* 本の借り方 */
+  .content{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .borrowc1{
+  width: 320px;
+  margin: 0 auto 0;
+
+  background: #FFFFFF;
+  border: 3px solid #E290AD;
+  box-sizing: border-box;
+  }
+  .borrowbg{
+  position: absolute;
+  width: 1187px;
+  height: 105px;
+  left: 129px;
+  top: 171px;
+
+  background: #E290AD;
+  }
+  .borrow{
+  font-family: ' A1', sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 5px 0;
+
+  letter-spacing: 0.3em;
+
+  color: #FFFFFF;
+  background: #E290AD;
+  }
+  .borrowp1{
+  margin: 27px auto 0;
+  font-family: ' A1', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  }
+
+  .step1p{
+    font-family: ' A1', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  .one{
+  font-family: ' A1', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 42px;
+
+  color: #FFFFFF;
+
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 60px;
+  top: 2px;
+
+  background: #51466A;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  }
+
+  .pic1{
+    position: relative;
+    margin-top: 34px;
+  }
+
+  .step1pic{
+    font-family: ' A1', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+
+    width: 198px;
+    height: 148px;
+    border: 2px solid #51466A;
+
+    text-align: center;
+
+    color: #000000;
+  }
+
+
+  .step2pic{
+    margin-top: 28px;
+    width: 198px;
+    height: 148px;
+    border: 2px solid #51466A;
+  }
+
+  .two{
+  position: absolute;
+  width: 40px;
+  height:40px;
+  left: 60px;
+  top: 215px;
+
+  font-family: ' A1', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 42px;
+
+  color: #51466A;
+
+  background: #FFFFFF;
+  border: 2px solid #51466A;
+  box-sizing: border-box;
+  }
+  .step2p{
+  font-family: ' A1', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+
+  text-align: center;
+
+  color: #000000;
+  }
+
+  .step3pic{
+    margin-top: 28px;
+    width: 198px;
+    height: 148px;
+    border: 2px solid #51466A;
+  }
+
+
+
+  .three{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 60px;
+  top: 430px;
+
+  font-family: ' A1', sans-serif;
+  font-size: 20px;
+  line-height: 42px;
+
+  color: #FFFFFF;
+
+  background: #51466A;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  }
+  .step3p{
+  font-family: ' A1', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+
+
+  text-align: center;
+
+  color: #000000;
+  }
+
+  .pic2{
+    position: relative;
+  }
+
+  .step4pic{
+    width: 198px;
+    height: 148px;
+    border: 2px solid #51466A;
+    margin-top: 28px;
+  }
+
+
+
+  .four{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 60px;
+  top: 30px;
+
+  font-family: ' A1', sans-serif;
+  font-size: 20px;
+  line-height: 42px;
+
+  color: #51466A;
+
+  background: #FFFFFF;
+  border: 2px solid #51466A;
+  box-sizing: border-box;
+  }
+  .step4p{
+    font-family: ' A1', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .step5pic{
+    width: 198px;
+    height: 148px;
+    border: 2px solid #51466A;
+    margin-top: 28px;
+  }
+
+  .five{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 60px;
+    top: 244px;
+
+    font-family: ' A1', sans-serif;
+    font-size: 20px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+
+    background: #51466A;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+  }
+  .step5p{
+    font-family: ' A1', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .step6pic{
+    width: 198px;
+    height: 148px;
+    border: 2px solid #51466A;
+    margin-top: 28px;
+  }
+
+  .six{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 59px;
+    top: 457px;
+
+    font-family: ' A1', sans-serif;
+    font-size: 20px;
+    line-height: 42px;
+
+    color: #51466A;
+
+    background: #FFFFFF;
+    border: 2px solid #51466A;
+    box-sizing: border-box;
+  }
+  .step6p{
+    font-family: ' A1', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .pic3{
+
+  }
+
+  .step7pic{
+    width: 198px;
+    height: 148px;
+    border: 2px solid #51466A;
+    margin-top: 28px;
+  }
+
+
+  .seven{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 91px;
+    top: 1539px;
+
+    font-family: ' A1', sans-serif;
+    font-size: 20px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+
+    background: #51466A;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+  }
+  .step7p{
+    font-family: ' A1', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .fukidashi{
+    width: 98px;
+    height: 69px;
+    position: absolute;
+    top: 1764px;
+    left: 89px;
+  }
+
+  .fukidaship{
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  left: 82px;
+  top: 1774px;
+
+  font-family: ' A1', sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+
+  color: #FFFFFF;
+  }
+
+  .ahiru{
+  margin-top: 65px;
+  margin-left: 70px;
+  width: 124px;
+  height: 103px;
+
+  }
+
+
+  .borrowc2{
+  width: 1180px;
+  height: 100px;
+  background: #E290AD;
+  }
+  .return{
+  margin-top: 24px;
+
+    font-family: ' A1', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+
+
+    letter-spacing: 0.3em;
+
+    color: #FFFFFF;
+    background: #E290AD;
+  }
+  .returnp{
+  margin:18px 0 auto;
+
+  font-family: ' A1', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  }
+  .returnpic{
+  margin:18px 0 auto ;
+  margin-bottom: 18px;
+
+  width: 198px;
+  height: 148px;
+
+  border: 5px solid #51466A;
+  box-sizing: border-box;
+  }
+
+
+  hr{
+    border: 1px solid #51466A;
+    margin-top: 60px;
+    }
+
+    .footericon3{
+      display: block;
+      width: 70px;
+       margin-top: 5px;
+       margin-left: 5px;
+    }
+
+    .copyright3{
+    font-size: 11px;
+    text-align: right;
+    margin-top: -15px;
+    color: #000000;
+    }
+}

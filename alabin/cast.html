@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+	<title>cast_aladdin</title>
+</head>
+
+<body class="cast_body">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+	<div id="wrapper">
+    <p class="btn-gnavi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </p>
+    <nav id="global-navi">
+        <ul class="menu">
+            <li><a href="index.html" class="menu_navi">HOME</a></li>
+            <li><a href="about.html" class="menu_navi">ABOUT THE MOVIE</a></li>
+            <li><a href="trailer.html" class="menu_navi">TRILER</a></li>
+            <li><a href="cast.html" class="menu_navi">CAST</a></li>
+            <li><a href="dvdbd.html" class="menu_navi">DVD/BD</a></li>
+            <li><a href="campaign.html" class="menu_navi">CAMPAIGN</a></li>
+        </ul>
+    </nav>
+    <script type="text/javascript" src="menu.js"></script> 
+    </div>
+
+    <p class="title05">CAST</p>
+
+
+    <div id="content">
+
+        <div id="thumb_img" class="cf">
+            <img class="active nonactive" src="images/aladdin.png" onclick="changeimg('mainala.png' , '役名','(俳優お名前 cv.声優お名前)','簡易紹介文','詳細説明文','images/anime_aladdin.png',this);">
+            <img class="active nonactive" src="images/jasmine.png" onclick="changeimg('mainjas.png','役名','(俳優お名前 cv.声優お名前)','簡易紹介文','詳細説明文','images/anime_jasmine.png',this);">
+            <img class="active nonactive" src="images/genie.png" onclick="changeimg('mainge.png','役名','(俳優お名前 cv.声優お名前)','簡易紹介文','詳細説明文','images/anime_genie.png',this);">
+            <img class="active nonactive" src="images/jafar.png" onclick="changeimg('mainjaf.png','役名','(俳優お名前 cv.声優お名前)','簡易紹介文','詳細説明文','images/anime_jafar.png',this);">
+            <img class="active nonactive" src="images/dahlia.png" onclick="changeimg('maindah.png','役名','(俳優お名前 cv.声優お名前)','簡易紹介文','詳細説明文','images/anime_dahlia.png',this);">
+            <img class="active nonactive" src="images/sultan.png" onclick="changeimg('mainsul.png','役名','(俳優お名前 cv.声優お名前)','簡易紹介文','詳細説明文','images/anime_saltun.png',this);">
+        </div>
+
+        <div id="featured_img">
+            <img id="img">
+            <script>
+            if (screen.width > 680) {
+                document.getElementById("img").src = "images/pc/mainala.png";
+            } else {
+                document.getElementById("img").src = "images/sp/mainala.png";
+            }
+            </script>
+            <p id="name">役名<!-- アラジン --></p>
+            <p id="actor">(俳優お名前 cv.声優お名前)<!-- (メナ・マスメード cv.中村倫也) --></p>
+            <p id="profile">簡易紹介文<!-- “ダイヤモンドの原石”のように、貧しくも清らかな心を持つ青年 --></p>
+            <p class="proicon">PROFILE</p>
+            <p id="desc">詳細説明文<!-- アグラバーの街で相棒の猿・アブーと貧しい暮らしを送る。<br class="br_pc">いつか自分の居場所を見つけ、人生を変えるチャンスを待ちわびて<br class="br_pc">いる。偶然出会った美しい王女ジャスミンに身分違いの恋をするが、<br class="br_pc">その恋こそが彼の運命を変える。やがて手にした魔法のランプから<br class="br_pc">現れた魔人ジーニーから“３つの願い”を叶えるチャンスを得るがーー --></p>
+            <img id="animeimg" src="images/anime_aladdin.png">
+        </div>
+        <script type="text/javascript" src="changeimage.js"></script> 
+    </div>
+
+
+    <div>
+        <p class="title06">STAFF</p>
+
+        <div class="staffbox">
+            <p class="stadeta00">お名前<!-- ガイ・リッチー --></p>
+            <p class="stadeta01">(監督・脚本)</p>
+            <p class="stadeta00">お名前<!-- アラン・メンケン --></p>
+            <p class="stadeta01">(歌・音楽・作曲)</p>
+            <p class="stadeta02">お名前<!-- ジョン・オーガスト --></p>
+            <p class="stadeta03">(脚本)</p>
+            <p class="stadeta02">お名前<!-- ダン・リン/ジョナサン・アイリック --></p>
+            <p class="stadeta03">(製作)</p>
+            <p class="stadeta02">お名前<!-- マーク・プラット/ケヴィン・デラノイ --></p>
+            <p class="stadeta03">(製作総指揮)</p>
+            <p class="stadeta02">お名前<!-- アラン・スチュワート --></p>
+            <p class="stadeta03">(撮影監督)</p>
+            <p class="stadeta02">お名前<!-- ジェマ・ジャクソン --></p>
+            <p class="stadeta03">(プロダクション・デザイン)</p>
+            <p class="stadeta02">お名前<!-- ジェームズ・ハーバート --></p>
+            <p class="stadeta03">(編集)</p>
+            <p class="stadeta02">お名前<!-- マイケル・ウィルキンソン --></p>
+            <p class="stadeta03">(衣装デザイン)</p>
+            <p class="stadeta02">お名前<!-- ハワード・アシュマン/ティム・ライス --></p>
+            <p class="stadeta03">(作曲)</p>
+            <p class="stadeta02">お名前<!-- ベンジ・パセック/ジャスティン・ポール --></p>
+            <p class="stadeta03">(新曲作詞)</p>
+        </div>  
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

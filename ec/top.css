@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	width: 375px;
+	height: 1589px;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 
+}
+
+h3 {
+	font-family: YuMincho;
+	text-align: center;
+}
+
+
+.b {
+	width: 375px;
+	height: 769px;
+	background-color: #95D6D0;
+}
+
+.px {
+	font-size: 15px;
+	font-family: YuMincho;
+	text-align: center;
+	color: #666666;
+	margin-top: 46px;
+	line-height: 55px;
+}
+
+.px2 {
+	font-size: 20px;
+	font-family: YuMincho;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.px3 {
+	font-size: 12px;
+	font-family: YuMincho;
+	text-align: center;
+	margin-top: 8px;
+}
+
+.px4 {
+	text-align: center;
+	padding-top: 13px;
+}
+
+.px5 {
+	font-size: 18px;
+	font-family: YuMincho;
+	text-align: center;
+	color: #FFFFFF
+}
+
+.t {
+	padding-top: 298px;
+	text-align: center;
+}
+
+.t2 {
+	padding-top: 260px;
+}
+
+.line {
+	text-align: center;
+	padding-top: 6px;
+}
+
+h3.top2 img {
+	width: 208px;
+	height: 48px;
+}
+
+.a {
+  text-decoration: none;
+}
+
+
+/*ハンバーガーメニュー*/
+.l-drawer {
+  position: relative;
+}
+.l-drawer__checkbox {
+  display: none;
+}
+.l-drawer__icon {
+  cursor: pointer;
+  display: block;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  left: 10px;
+  top: 9px;
+}
+.l-drawer__icon-parts, .l-drawer__icon-parts:before, .l-drawer__icon-parts:after {
+  background-color: #000000;
+  display: block;
+  width: 24px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.l-drawer__icon-parts:before, .l-drawer__icon-parts:after {
+  content: " ";
+}
+.l-drawer__icon-parts:before {
+  top: 12px;
+}
+.l-drawer__icon-parts:after {
+  top: -12px;
+}
+.l-drawer__overlay {
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+  width: 375px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.l-drawer__menu {
+  background: #95D6D0;
+  color: #000;
+  max-width: 100%;
+  width: 100%;
+  height: 812px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  left: 0;
+  top: -812px;
+}
+.l-drawer__icon {
+  z-index: 4;
+}
+.l-drawer__menu {
+  z-index: 3;
+}
+.l-drawer__overlay {
+  z-index: 2;
+}
+.l-drawer__checkbox:checked ~ .l-drawer__icon .l-drawer__icon-parts {
+  background: transparent;
+}
+.l-drawer__checkbox:checked ~ .l-drawer__icon .l-drawer__icon-parts:before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 0;
+}
+.l-drawer__checkbox:checked ~ .l-drawer__icon .l-drawer__icon-parts:after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0;
+}
+.l-drawer__checkbox:checked ~ .l-drawer__overlay {
+  opacity: 0.3;
+  pointer-events: auto;
+}
+.l-drawer__checkbox:checked ~ .l-drawer__menu {
+  top: 0;
+}
+.l-drawer__icon-parts, .l-drawer__icon-parts:after, .l-drawer__icon-parts:before, .l-drawer__overlay, .l-drawer__menu {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+.l-drawer__item {
+	padding-top: 100px;
+}
+.l-drawer__item-inner {
+	color: #000000;
+	font-family: "HiraMinPro-W6";
+	font-size: 32px;
+}
+.hm_1 {
+	text-align: center;
+	margin-top: 100px;
+}
+/*ハンバーガーメニュー*/

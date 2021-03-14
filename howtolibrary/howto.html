@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>大正大学附属図書館ガイド</title>
+    <link rel="stylesheet" type="text/css" href="howto.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+
+  <div class="aaaa">
+  <a class="top_link" href="index.html">
+    <h1 class="headertitle">大正大学附属図書館ガイド</h1>
+    <img class="headericon" src="images/headericon.png" alt="アイコン">
+ </a>
+
+</div>
+<nav>
+  <ul class="menu">
+    <li><a class="fix" href="index.html">トップ</a></li>
+    <li><a href="howto.html">本の借り方</a></li>
+    <li><a href="guide.html">活用ガイド</a></li>
+ </ul>
+</nav>
+</header>
+
+
+
+<!-- 本の借り方 -->
+<div class="content">
+<div class="borrowc1">
+
+<h2 class="borrow">本の借り方</h2>
+<p class="borrowp1">借りたい本を持って2階の入り口付近にある貸出機械のもとへいく</p>
+
+<!-- STEP1 -->
+<div class="pic1">
+<div>
+<img class="step1pic" src="images/borrow1.png">
+<h3 class="one">1</h3>
+<p class="step1p">「貸出」を選択</p>
+</div>
+
+
+<!-- STEP2 -->
+<div>
+<img class="step2pic" src="images/borrow2.png">
+<h3 class="two">2</h3>
+<p class="step2p">カードを入れる</p>
+</div>
+
+<!-- STEP3 -->
+<div>
+<img class="step3pic" src="images/borrow3.png">
+<h3 class="three">3</h3>
+<p class="step3p">バーコードを下にして右奥に置く</p>
+</div>
+</div>
+
+<div class="pic2">
+<!-- STEP4 -->
+<div>
+<img class="step4pic" src="images/borrow4.png">
+<h3 class="four">4</h3>
+<p class="step4p">読み取り</p>
+</div>
+
+<!-- STEP5 -->
+<div>
+<img class="step5pic" src="images/borrow5.png">
+<h3 class="five">5</h3>
+<p class="step5p">本を取る</p>
+</div>
+
+</-- STEP6 -->
+<div>
+<img class="step6pic" src="images/borrow6.png">
+<h3 class="six">6</h3>
+<p class="step6p">「終了」を押す</p>
+</div>
+</div>
+
+<div class="pic3">
+<!-- STEP7 -->
+<div>
+<img class="step7pic" src="images/borrow7.png">
+<h3 class="seven">7</h3>
+<p class="step7p">レシート・カードを受け取る</p>
+</div>
+
+<img class="fukidashi" src="images/fukidashi.png">
+<p class="fukidaship">完了！</p>
+<img class="ahiru" src="images/ahiru.png">
+</div>
+
+
+<!-- 本の返し方 -->
+
+<h2 class="return">本の返し方</h2>
+<p class="returnp">8号館入り口すぐ右の壁にあるポストに返却</p>
+<img class="returnpic" src="images/return.png">
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+<hr>
+<img class="footericon3" src="images/footericon.png" alt="大正大学">
+<p class="copyright3">Copyright © 2020 Taisho University. All Rights Reserved.</p>
+</footer>
+
+<!-- script -->
+<div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function() {
+ $('.Toggle').click(function() {
+     $(this).toggleClass('active');
+
+     if ($(this).hasClass('active')) {
+         $('.NavMenu').addClass('active');　		//クラスを付与
+     } else {
+         $('.NavMenu').removeClass('active');	//クラスを外す
+     }
+ });
+});
+</script>
+
+</div>
+
+</body>
+</html>

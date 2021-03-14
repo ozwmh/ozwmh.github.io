@@ -1,0 +1,1506 @@
+html{
+	width: 100%;
+	height: auto;
+}
+
+body {
+     font-family: "Cinzel Decorative";font-size: 22px;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+ }
+
+ @import url("reset.css");
+
+/*グローバルメニュー作成*/
+ #global-navi {
+    background:rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+     
+}
+#wrapper nav ul li{
+display:inline-block;
+font-size: 18px;
+padding: 0px 10px 0px 30px;
+}
+
+#wrapper nav ul li a{
+color: #ddd
+}
+
+ul.menu{
+	padding: 0px 0px 0px 10px;
+	margin: 10px;
+	font-size: 
+}
+
+a.menu_navi{
+	text-decoration: none;
+	padding-left: 30px;
+}
+
+.menu_navi:hover{
+	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+	/* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+
+
+
+/*スマホ画面でハンバーガーメニューの形にする*/
+@media screen and (max-width: 600px) {
+#wrapper nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding-top: 50px;
+    background-image: url(images/menuimage.png);
+    background-repeat: no-repeat;
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 2
+}
+#wrapper nav ul li {
+    display:block;
+    padding: 36px 2px;
+}
+ 
+#wrapper nav ul li a {
+    text-decoration: none;
+    color: #fff
+}
+ 
+#wrapper .btn-gnavi {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 24px;
+    z-index: 3;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+}
+ 
+#wrapper .btn-gnavi span {
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+}
+ 
+#wrapper .btn-gnavi span:nth-child(1) {
+    top: 0
+}
+ 
+#wrapper .btn-gnavi span:nth-child(2) {
+    top: 10px
+}
+ 
+#wrapper .btn-gnavi span:nth-child(3) {
+    top: 20px
+}
+ 
+#wrapper .btn-gnavi.open {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+ 
+#wrapper .btn-gnavi.open span {
+    background: #666
+}
+ 
+#wrapper .btn-gnavi.open span {
+    width: 24px;
+}
+#wrapper .contents section p {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    line-height: 1.4;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 6px #666
+}
+ 
+#wrapper .contents section:nth-child(odd) p {
+    left: 10%
+}
+ 
+#wrapper .contents section:nth-child(even) p {
+    right: 10%
+}
+}
+.content{
+    line-height: 1.6;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.content p{
+    margin-bottom: 40px;
+}
+
+
+
+/*トップページ*/
+.top_body{
+	background-image: url(images/top_aladdin.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-color: #000;
+}
+
+/*top_sp*/
+@media screen and (max-width:640px){
+.top_body{
+	background-image: url(images/sp_top.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-color: #000
+}
+}
+
+
+.campaignbtn{
+	width: 25%;
+	height: auto;
+	margin-top: 47%;
+	margin-left: 3%;
+}
+
+.campaignbtn:hover{
+	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+	/* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+
+.playlist{
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	margin-top: 18%;
+	text-align: center;
+}
+
+.playicon01{
+	width: 80%;
+	height: auto;
+	margin-left: 2%;
+}
+
+.playicon02{
+	width: 80%;
+	height: auto;
+	margin-left: 2%;
+}
+
+.playicon03{
+	width: 80%;
+	height: auto;
+	margin-left: 2%;
+}
+
+
+/*youtube_sp*/
+@media screen and (max-width:640px){
+	.playlist {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding: 0 0 12px 8px;
+        display: -ms-flexbox;
+        display: flex; 
+        margin-top: 20%;
+    }
+
+    .playicon {
+    	width: 100%;
+    	height: auto;
+        flex: 0 0 70%;
+        margin-left: 5%;
+        margin-right: 5%;
+  }
+
+  .playicon01{
+  	width: 100%;
+  	height: auto;
+  }
+
+  .playicon02{
+  	width: 100%;
+  	height: auto;
+  }
+
+  .playicon03{
+  	width: 100%;
+  	height: auto;
+  	margin-right: 10%;
+  }
+
+  .campaignbtn{
+  	width: 95%;
+	height: auto;
+	margin-top: 210%;
+	text-align: center;
+  }
+}
+
+
+.watchbtn a{
+	font-family: 'Cinzel Decorative', cursive;
+    border: 0.5px solid #F9D672;
+    color: #F9D672;
+    display: block;
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 1;
+    margin: 30px auto;
+    padding: 30px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 60%;
+}
+
+.watchbtn:hover{
+	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+	/* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+
+
+/*アバウトムービーのページpc*/
+.about_body{
+	background-image: url(images/aboutimage.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-attachment: scroll;
+	background-color: #000;
+}
+
+/*アバウトムービーsp*/
+@media screen and (max-width:640px){
+.about_body{
+	background-image: url(images/sp_about.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-color: #000
+}
+}
+
+/*——　introduction_pc　——*/
+.title01{
+	font-size: 320%;
+	color: #FDE190;
+	font-weight: bold;
+	margin-top: 8%;
+	margin-left: 12%;
+}
+
+.subtitle01{
+	font-size: 200%;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: 450;
+	margin-top: 4%;
+	margin-left: 12%;
+	line-height: 160%;
+	letter-spacing: 5px;
+}
+
+.title02{
+	font-size: 28px;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 3%;
+	margin-left: 4%;
+}
+
+/*——　文字の右にライン　——*/
+.title02{
+    display: flex;
+    align-items: center;
+}
+.title02:after {
+    border-top: 0.25px solid;
+    content: "";
+    width: 30%;
+    color: #fff;
+    margin:0 0 0 8px;
+}
+.title02:after {
+    margin-left: 1rem;
+}
+
+.text01{
+	font-size: 18px;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: normal;
+	margin-top: 3%;
+	margin-left: 12%;
+	line-height: 170%;
+	margin-bottom: 20%;
+}
+
+@media screen and (min-width: 768px){
+	.br_sp {display: none;}
+
+
+
+.subtitle02{
+	font-size: 26px;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: bold;
+	margin-top: 4%;
+	margin-left: 12%;
+	line-height: 160%;
+}
+}
+
+/*introduction_sp*/
+@media screen and (max-width:640px){
+.title01{
+	font-size: 22px;
+	color: #FDE190;
+	font-weight: bold;
+	margin-top: 24%;
+	text-align: center;
+	margin-left: 1px;
+}
+
+.subtitle01{
+	font-size: 24px;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: 350;
+	margin-top: 12%;
+	margin-left: 1%;
+	line-height: 160%;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.title02{
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 12%;
+	margin-left: 14%;
+	text-align: center;
+}
+
+/*——　文字の左右にライン　——*/
+.title02{
+    display: flex;
+    align-items: center;
+}
+.title02:before, .title02:after {
+    border-top: 0.25px solid;
+    content: "";
+    width: 10%;
+    color: #fff;
+}
+.title02:after {
+    margin-left: 1rem;
+}
+
+.title02:before {
+	margin-right: 16px;
+}
+
+.text01{
+	font-size: 14px;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: normal;
+	margin-top: 20%;
+	margin-left: 0%;
+	line-height: 180%;
+	text-align: center;
+	margin-bottom: 70%;
+}
+
+.subtitle02{
+	font-size: 16px;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: bold;
+	margin-top: 30%;
+	margin-left: 4%;
+	line-height: 160%;
+	text-align: center;
+	margin-bottom: 20%;
+}
+}
+
+
+/*——　story_pc　——*/
+.title03{
+	font-size: 28px;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 20%;
+	margin-left: 8%;	
+}
+
+/*——　文字の右にライン　——*/
+.title03{
+    display: flex;
+    align-items: center;
+}
+.title03:after {
+    border-top: thin solid;
+    content: "";
+    width: 30%;
+    color: #fff;
+}
+.title03:after {
+    margin-left: 1rem;
+}
+
+.subtitle03{
+	font-size: 28px;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: bold;
+	margin-top: 6%;
+	margin-left: 12%;
+	letter-spacing: 4px;
+}
+
+.subtitle04{
+	font-size: 24px;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: normal;
+	margin-top: 4%;
+	margin-left: 18%;
+	letter-spacing: 4px;
+}
+
+.text02{
+	font-size: 22px;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: 300;
+	margin-top: 5%;
+	margin-left: 12%;
+	line-height: 240%;
+	letter-spacing: 4px;
+	margin-bottom: 18%;
+}
+
+/*story_sp*/
+@media screen and (max-width:640px){
+.title03{
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 60%;
+	margin-left: 28%;	
+}
+/*——　文字の左右にライン　——*/
+.title03{
+    display: flex;
+    align-items: center;
+}
+.title03:after, .title03:before {
+    border-top: 0.25px solid;
+    content: "";
+    width: 10%;
+    color: #fff;
+    margin:0 0 0 8px;
+}
+.title03:after {
+    margin-left: 1rem;
+}
+
+.title03:before {
+	margin-right: 1rem;
+}
+
+.subtitle03{
+	font-size: 16px;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: bold;
+	margin-top: 20%;
+	margin-left: 8%;
+	letter-spacing: 4px;
+}
+
+.subtitle04{
+	font-size: 16px;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: normal;
+	margin-top: 16%;
+	margin-left: 32%;
+	letter-spacing: 1px;
+	line-height: 150%;
+}
+
+.text02{
+	font-size: 14px;
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: 300;
+	margin-top: 16%;
+	margin-left: 16%;
+	line-height: 200%;
+	letter-spacing: 4px;
+	margin-bottom: 86%;
+}
+}
+
+
+/*——　triler_pc　——*/
+.trailer_body{
+	background-image: url(images/trailerimage.png);
+	background-color: #050C1C;
+	background-repeat: no-repeat;
+}
+
+.title04{
+	text-align: center;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 10%;
+}
+
+.playmovie00{
+	text-align: center;
+	margin-top: -2%;
+}
+
+.playmovie{
+	display: inline-block;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.playbox01{
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.playbox02{
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.playtext_1{
+	text-align: center;
+ 	text-decoration: none;
+ 	font-family: YuMincho;
+ 	color: #fff;
+ 	font-size: 20px;
+}
+
+ .playtext_2{
+ 	text-align: center;
+ 	text-decoration: none;
+ 	font-family: YuMincho;
+ 	color: #fff;
+ }
+
+ /* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.playbox01 { display: block !important; }
+.playbox02 { display: block !important; }
+.playbox01_sp { display: none !important; }
+.playbox02_sp { display: none !important; }
+.playbox03_sp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .playbox01 { display: none !important; }
+    .playbox02 { display: none !important; }
+    .playbox01_sp { display: block !important; }
+    .playbox02_sp { display: block !important; }
+    .playbox03_sp { display: block !important; }
+}
+
+
+ /*——　triler_sp　——*/
+ @media screen and (max-width:640px){
+.trailer_body{
+	background-image: url(images/trailer_sp.png);
+	background-color: #050C1C;
+	background-repeat: no-repeat;
+}
+
+.title04{
+	text-align: center;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 10%;
+}
+
+.playmovie00{
+	text-align: center;
+	margin-top: -2%;
+}
+
+.mainmovie{
+	width: 324px;
+	height: auto;
+}
+
+.playmovie{
+	display: inline-block;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.submovie{
+	width: 180px;
+	height: auto;
+}
+
+.playbox01_sp{
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.playbox02_sp{
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.playbox03_sp{
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.playtext_1{
+	text-align: center;
+ 	text-decoration: none;
+ 	font-family: YuMincho;
+ 	color: #fff;
+ 	font-size: 18px;
+}
+
+ .playtext_2{
+ 	text-align: center;
+ 	text-decoration: none;
+ 	font-family: YuMincho;
+ 	color: #fff;
+ 	font-size: 12px;
+ }
+
+
+
+
+
+
+}
+
+
+
+/*——　cast_pc　——*/
+.cast_body{
+	background-image: url(images/cast_pc.png);
+	background-repeat: no-repeat;
+	background-color: #060C15;
+}
+
+.title05{
+	color: #fff;
+	font-size: 40px;
+	margin-top: 8%;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+/*——　画像の切り替え　——*/
+.cf:before,
+.cf:after{
+content:"";
+display:table;
+}
+ 
+.cf:after{
+clear:both;
+}
+ 
+.cf{
+zoom:1;
+}
+
+
+#content {
+/*  max-width: 650px;*/
+  margin: 3rem auto;
+/*  text-align: center;*/
+}
+
+#featured_img img,
+#thumb_img img {
+  max-width: 100%;
+}
+
+#thumb_img {
+  margin-top:2%;
+   text-align: center;
+  img {
+    float:left;
+    max-width: 32%;
+    width: 32%;
+    cursor: pointer;
+    margin-right:2%;
+    border:2px solid #eee;
+    box-sizing:border-box;
+    
+    &.active{
+      border:2px solid #cac6b8;
+    }
+    
+    &:last-child{
+      margin-right:0;
+    }
+  }
+}
+
+.active:hover{
+	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+	/* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+
+#img{
+	float: left;
+	width: 369px;
+	height: 459px;
+	margin-left: 4%;
+	margin-top: 1%;
+	margin-right: 4%;
+}
+
+#name{
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: bold;
+	margin-top: 2%;
+	margin-left: 4%;
+	font-size: 40px;
+}
+
+#actor{
+	color: #fff;
+	font-family: YuMincho;
+	margin-top: 2%;
+	margin-left: 4%;
+	font-size: 24px;
+}
+
+#profile{
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: bold;
+	margin-top: 2%;
+	margin-left: 4%;
+	font-size: 22px;
+}
+
+
+#desc{
+	color: #fff;
+	font-family: YuMincho;
+	margin-top: 0.5%;
+	margin-left: 4%;
+	font-size: 18px;
+	letter-spacing: 2px;
+	line-height: 150%;
+}
+
+.proicon{
+	display:inline-block;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 4%;
+}
+
+#animeimg{
+	margin-left: 50%;
+	margin-top: -10%;
+}
+
+.title06{
+	color: #fff;
+	font-size: 40px;
+	margin-top: 6%;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.staffbox{
+	/*width: 900px;*/
+	height: 800px;
+	text-align: center;
+	overflow:auto;
+	margin-top: 2%;
+}
+
+.staffbox::-webkit-scrollbar {
+    display:none;
+}
+
+.stadeta00{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 6%;
+}
+
+.stadeta01{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 28px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 6%;
+}
+
+.stadeta02{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+.stadeta03{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 6%;
+}
+
+/*cast_sp*/
+@media screen and (max-width:640px){
+.cast_body{
+	background-image: url(images/cast_sp.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-color: #060C15;
+}
+
+.title05{
+	color: #fff;
+	font-size: 24px;
+	margin-top: 10%;
+	text-align: center;
+	font-weight: bold;
+}
+
+/*——　画像の切り替え　——*/
+.cf:before,
+.cf:after{
+content:"";
+display:table;
+}
+ 
+.cf:after{
+clear:both;
+}
+ 
+.cf{
+zoom:1;
+}
+
+
+#content {
+/*  max-width: 650px;*/
+  margin: 2rem auto;
+/*  text-align: center;*/
+}
+
+#featured_img img,
+#thumb_img img {
+  max-width: 100%;
+}
+
+#thumb_img {
+  margin-top:2%;
+  text-align: center;
+  img {
+/*    float:left;*/
+    max-width: 15%;
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+/*    margin-right:2%;*/
+    border:2px solid #eee;
+    box-sizing:border-box;
+    
+    &.active{
+      border:2px solid #cac6b8;
+    }
+    
+    &:last-child{
+      margin-right:0;
+    }
+  }
+}
+
+.active{
+	width: 15%;
+	height: 15%;
+}
+
+.nonactive{
+	width: 15%;
+    height: 15%;
+
+}
+
+.active:hover{
+	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+	/* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+
+#img{
+/*	float: left;*/
+	width: 100%;
+	height: auto;
+	margin-top: 4%;
+	margin-left: 0%;
+	clear:both;
+	float:none;
+	margin-right: 0px;
+}
+
+#name{
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: bold;
+	margin-top: 4%;
+	margin-left: 4%;
+	font-size: 20px;
+	text-align: center;
+}
+
+#actor{
+	color: #fff;
+	font-family: YuMincho;
+	margin-top: 2%;
+	margin-left: 4%;
+	font-size: 16px;
+	text-align: center;
+}
+
+#profile{
+	color: #fff;
+	font-family: YuMincho;
+	font-weight: bold;
+	margin-top: 2%;
+	margin-left: 0%;
+	font-size: 16px;
+}
+
+#desc{
+	color: #fff;
+	font-family: YuMincho;
+	margin-top: 4%;
+	margin-left: 4%;
+	font-size: 14px;
+	letter-spacing: 2px;
+	line-height: 150%;
+}
+
+.br_pc {
+	display: none;
+}
+
+
+.proicon{
+	display:inline-block;
+    padding: 0.5em 1em;
+/*    margin: 2em 0;*/
+    font-weight: bold;
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 4%;
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+
+#animeimg{
+	width: 20%;
+	height: auto;
+	margin-left: 75%;
+	margin-top: 0%;
+}
+
+.title06{
+	color: #fff;
+	font-size: 24px;
+	margin-top: 12%;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.staffbox{
+	/*width: 900px;*/
+	height: 400px;
+	text-align: center;
+	overflow:auto;
+	margin-top: 14%;
+	margin-bottom: 16%;
+}
+
+.staffbox::-webkit-scrollbar {
+    display:none;
+}
+
+.stadeta00{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 12%;
+}
+
+.stadeta01{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 12%;
+}
+
+.stadeta02{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.stadeta03{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 13px;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 10%;
+}
+}
+
+
+/*——　dvdbd_pc　——*/
+.dvdbd_body{
+	background-image: url(images/dvd_pc.png);
+	background-repeat: no-repeat;
+	background-color: #2C1B11;
+}
+
+.title07{
+	color: #fff;
+	font-size: 40px;
+	margin-top: 8%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.dvdbox{
+	display: flex;
+	flex-wrap:wrap;
+	margin-top: 48px;
+}
+.dvdbox li {
+	width: calc(100%/4);/*←画像を横に4つ並べる場合*/
+	padding:0 5px;/*←画像の左右に5pxの余白を入れる場合*/
+	box-sizing:border-box;
+	list-style: none;
+}
+.dvdbox li img {
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+	border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
+	list-style: none;
+}
+
+.bdimg{
+	width: 100%;
+	height: auto;
+}
+
+.dvdbybtn a {
+	font-family: 'Cinzel Decorative', cursive;
+    border: 0.5px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 1;
+    margin: 30px auto;
+    padding: 30px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 60%;
+}
+
+.dvdbybtn:hover{
+	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+	/* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+
+
+
+/*dvdbd_sp*/
+@media screen and (max-width:640px){
+.dvdbd_body{
+	background-image: url(images/dvd_sp.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-color: #2C1B11;
+}
+
+.title07{
+	color: #fff;
+	font-size: 24px;
+	margin-top: 10%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.bdimg{
+	width: 100%;
+	height: auto;
+}
+
+.dvdbox{
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	height: 560px;
+  	overflow:scroll;
+  	flex-wrap:nowrap;
+}
+
+.dvdbox li {
+	width: calc(70%);/*←画像を横に4つ並べる場合*/
+	padding:0 5px;/*←画像の左右に5pxの余白を入れる場合*/
+	box-sizing:border-box;
+}
+.dvdbox li img {
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+	border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
+}
+
+.dvdbybtn a {
+	font-family: 'Cinzel Decorative', cursive;
+    border: 0.5px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 1;
+    margin: 20px auto;
+    padding: 30px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 60%;
+}
+
+.dvdbybtn:hover{
+	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+	/* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+}
+
+
+
+/*——　campaign_pc　——*/
+.camp_body{
+	background-color: #000237;
+}
+
+.campbox{
+	text-align: center;
+	margin-top: 2%;
+}
+
+.camtext1{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 4%;
+	margin-left: 4%;
+	text-align: left;
+}
+
+.camtext2{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 24px;
+	font-weight: normal;
+	margin-top: 4%;
+	margin-left: 4%;
+	text-align: left;
+	line-height: 150%;
+}
+
+.camimg2{
+	text-align: center;
+	margin-top: 6%;
+}
+
+.camimg3{
+	text-align: center;
+	margin-top: 2%;
+}
+
+.camimg4{
+	text-align: center;
+	margin-top: 6%;
+}
+
+.camtext3{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 4%;
+	margin-left: 18%;
+	text-align: left;
+}
+
+.camtext4{
+	color: #fff;
+	font-size: 36px;
+	font-weight: normal;
+	margin-top: 4%;
+}
+
+.camimg5{
+	text-align: left;
+	margin-top: 2%;
+	margin-left: 4%;
+	float:left;
+}
+
+.camtext5{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 24px;
+	font-weight: normal;
+	margin-top: 2%;
+}
+
+.snsbox{
+	margin-top: 2%;
+}
+
+.snsbox:hover{
+	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+	/* リンクをホバーしたときのカーソルにする。*/
+	cursor: pointer;
+}
+
+.camimg6{
+	margin-top: 8%;
+}
+
+/*campaign_sp*/
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.camppc { display: block !important; }
+.campsp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .camppc { display: none !important; }
+    .campsp { display: block !important; }
+}
+
+
+@media screen and (max-width:640px){
+.camimg1{
+	text-align: center;
+	width: 227px;
+}
+
+.camtext1{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 13px;
+	font-weight: normal;
+	margin-top: 4%;
+	margin-left: 4%;
+	text-align: left;
+
+}
+
+.camtext2{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 12px;
+	font-weight: normal;
+	margin-top: 4%;
+	text-align: left;
+	line-height: 150%;
+}
+
+.camimg2{
+	width: 129px;
+	text-align: center;
+	margin-top: 6%;
+}
+
+.camimg3{
+	width: 100%;
+	height: auto;
+}
+
+.camimg4{
+	width: 85px;
+	text-align: center;
+	margin-top: 6%;
+}
+
+.campabox{
+	display: flex;
+	flex-direction: column;
+}
+
+.order1 {
+  order: 1;
+}
+.order2 {
+  order: 2;
+}
+
+.camtext3{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 18px;
+	font-weight: normal;
+	margin-top: 0%;
+	margin-left: 0%;
+	text-align: center;
+}
+
+.camimg5{
+	text-align: center;
+	margin-top: 0%;
+	margin-left: 0%;
+	clear:both;
+	float:none;
+	width: 200px;
+	height: auto;
+}
+
+.spimg{
+	text-align: center;
+}
+
+.camtext4{
+	color: #fff;
+	font-size: 22px;
+	font-weight: normal;
+	margin-top: 4%;
+	margin-left: 4%;
+}
+
+.camtext5{
+	color: #fff;
+	font-family: Yumincho;
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: 2%;
+	margin-left: 4%;
+	line-height: 150%;
+}
+
+.snsbox00{
+	text-align: center;
+}
+
+.snsbox{
+	margin-top: 10px;
+	width: 194px;
+	height: auto;
+}
+
+.camimg6{
+	width: 296px;
+	height: auto;
+	margin-left: 8%;
+	margin-bottom: 10%;
+}
+}
+
+
+
+
